@@ -184,6 +184,9 @@ main > header{
 
 
 @media (max-width: 1000px){
+	body{
+		background-size: 60%;
+	}
 	#component-box{
 		padding: 2rem 0;
 		flex-direction: column;
