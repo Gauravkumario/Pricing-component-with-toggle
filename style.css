@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	background-color: hsl(240, 78%, 98%);
+	background-image: url(images/bg-top.svg),url(images/bg-bottom.svg);
+	background-repeat: no-repeat;
+	background-position: top right, bottom left;
+	font-family: 'Montserrat', sans-serif;
+}
+
+main{
+	width: 100%;
+}
+
+main > header{
+	height: 25vh;
+	padding: 25PX;
+	display: grid;
+	place-items: center;
+}
+
+#header-txt{
+	font-size: 32px;
+	color: hsl(233, 13%, 49%);
+}
+
+#cost-bar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.price-package{
+	color: hsl(234, 14%, 74%);
+	font-size: 16px;
+	margin: 0 5px;
+}
+
+#toggle{
+	width: 3.8rem;
+	height: 2.2rem;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.toggle-tap{
+	width: 1.4rem;
+	height: 1.5rem;
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+	background-color: #fff;
+}
+
+#annually-btn{
+	visibility: hidden;
+}
+#monthly-btn{
+	visibility: visible;
+}
+
+#component-box{
+	display: flex;
+	height: 75vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.box-1>h1>mark,.box-3>h1>mark{
+	font-size: 52px;
+	color: hsl(232, 13%, 33%);
+	background: transparent;
+}
+
+.box-1,.box-3{
+	width: 350px;
+	height: 450px;
+	background-color: #fff;
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.box-1{
+	border-radius: 12px 0 0 12px;
+}
+
+.box-3{
+	border-radius: 0 12px 12px 0;
+}
+
+.box-1 > h1,.box-3 > h1{
+	font-size: 15px;
+	font-weight: 700;
+	width: 80%;
+	padding: 1rem 0;
+	color: hsl(232, 13%, 33%);
+	text-align: center;
+	border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+.box-1 > button,.box-3 > button{
+	width: 80%;
+	height: 2.5rem;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+	margin: 2rem 0;
+	cursor: pointer;
+	font-size: 15px;
+	letter-spacing: 1PX;
+	border-radius: 7px;
+	background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.box-2{
+	width: 350px;
+	height: 500px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.box-2 > h1{
+	font-size: 15px;
+	font-weight: 700;
+	width: 80%;
+	color: #fff;
+	padding: 1rem 0;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+
+.box-2 > button{
+	width: 80%;
+	height: 2.5rem;
+	border: none;
+	margin: 2rem 0;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 15px;
+	color: hsl(237, 63%, 64%);
+	border-radius: 7px;
+}
+.box-1 > button:hover,.box-3 > button:hover{
+	background: transparent;
+	color: hsl(237, 63%, 64%);
+	border: 1px solid hsl(237, 63%, 64%);
+}
+
+.box-2 > button:hover{
+	color: #fff;
+	border: 1px solid #fff;
+	background: transparent;
+}
+
+.box-2 > h1 > mark{
+	color: #fff;
+	font-size: 52px;
+	background: transparent;
+}
+
+.head-txt{
+	font-size: 20px !important;
+}
+
+.price-tag{
+	font-size: 46px !important;
+	letter-spacing: 2px;
+}
+
+
+@media (max-width: 1000px){
+	#component-box{
+		padding: 2rem 0;
+		flex-direction: column;
+		height: auto;
+		justify-content: space-around;
+	}
+	.box-1,.box-2,.box-3{
+		margin: 1rem 0;
+		width: 80%;
+	}
+}
